@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: made_tommy;
+  src: url(made_tommy/MADE\ TOMMY\ ExtraBold_PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family:creato_display;
+  src: url(creato_display/CreatoDisplay-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+header {
+  font-family: made_tommy;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: made_tommy;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 60px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  max-width: 600px;
+
+}
+
+.textoprin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: creato_display;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  color: #9b9b9b;
+  
+}
+
+body {
+ background-image: url(fundo.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+  
+}
+
+.container img {
+  height: 150px;
+  width: 330px;
+  animation: animacao 1s infinite alternate-reverse;
+  margin-top: 20px;
+
+} 
+
+.container {
+ display: flex ;
+ flex-direction: column;
+ position: absolute;
+ left: 38%;
+}
+
+ iframe {
+  height: 250px;
+  width: 350px;
+  transform: translate(-50%, 50%);
+  margin-left: 50%;
+  margin-bottom: 150px;
+  border-radius: 7px;
+ 
+ 
+ 
+ 
+}
+
+.container input {
+ padding: 5px;
+}
+
+img {
+ 
+  height: 150px;
+  width: 120px;
+  animation: animacao 1s infinite alternate-reverse;
+  margin-top: 120px;
+}
+
+h3 {
+text-align: center;
+padding-top: 200px;
+font-family:made_tommy;
+margin-top: 70px;
+color:floralwhite;
+font-size: 25px;
+
+}
+
+footer {
+  text-align: center;
+  font-family:made_tommy;
+  color: #ffffff;
+  margin-bottom: 20px;
+ 
+}
+
+
+
+@keyframes animacao {
+  from {
+    scale: 1.0;
+  }
+
+  to {
+    scale: 1.1;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+   left: 5%;
+  }
+}
